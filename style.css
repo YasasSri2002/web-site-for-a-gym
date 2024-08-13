@@ -1,0 +1,540 @@
+body{
+    min-height: 100vh;
+    background-color: #252526;
+    overflow: auto;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+.navbar img{
+    width: 75px;
+    height: 75px;
+    border-radius: 37px;
+}
+
+
+.navbar ul{
+    padding: 0%;
+    list-style-type: none;
+    margin: 0;
+}
+
+.navbar li{
+    display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
+    justify-content: space-between;
+
+    
+}
+
+
+.navbar a{
+    position: relative;
+    text-decoration: none;
+    color: white;
+    display: flex;
+    padding: 8px;
+    
+}
+
+.navbar a:after{
+    content: '';
+    background-color: #E8C16B;
+    position: absolute;
+    color: black;
+    height: 3px;
+    width: 0%;
+    left: 0;
+    bottom: -10px;
+    transition: 0.3s;
+}
+
+.navbar a:hover{
+    color: #E8C16B;
+}
+
+.navbar a:hover:after{
+    width: 100%;
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right:0;
+    height: 100vh;
+    width: 150px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.007);
+    backdrop-filter: blur(200px);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+
+.sidebar li {
+    padding: 10px;
+    
+}
+
+
+#hero{
+    display: flex;   
+}
+
+#hero div {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 100px;
+    width: 50%;
+    text-align: center;
+    font-size: 75px;
+}
+
+
+#heroParagraph{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 40px;
+}
+
+
+#hero img{
+    padding-top: 75px;
+    padding-left: 0;
+    width: auto;
+    height: 400px;
+    
+}
+
+#service table{
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    border: solid red;
+    padding: 10px;
+
+}
+
+
+#service table tr{
+    text-align: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    border: solid 2px;
+}
+
+
+#service table td{
+    padding-left: 10px;
+    color: #f8fefe;
+}
+
+#service table {
+    display: table;
+    text-indent: initial;
+    border-collapse: separate;
+    box-sizing: border-box;
+    unicode-bidi: isolate;
+    border-spacing: 2px;
+    border-color: gray;
+}
+
+#heroCallSign{
+    display: flex;
+    float: right;
+    color: #f8fefe;
+}
+
+#heroCallSign a{
+    text-decoration: none;
+    color: #f8fefe;
+}
+
+#CallSignBtn{
+    background-color: #E8C16B ;
+    width: auto;
+    height: 75%;
+    margin-top: 20px;
+    display: inline-block;
+    margin-top: 5px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    margin-left: 5px;
+
+}
+
+#CallSign a:hover{
+    color: #60f6ff;
+}
+
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 500,
+  'GRAD' 30,
+  'opsz' 24
+}
+
+.card-group{
+    display: flex;
+    width: 100%;
+}
+
+.card{
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 400px; 
+    height: auto;
+    object-fit: cover;
+}
+
+#cardAbout{
+    align-items: center;
+    text-align: center;
+    justify-content: right;
+}
+
+#cardIcons  {
+    margin-left: 30%;
+    margin-right: auto;
+    width: 50%;
+}
+
+#cardIcons i{
+    margin-left: 5%;
+    justify-content: space-evenly;
+}
+
+.card h2{
+    color: #E8C16B;
+}
+
+.card h2:hover{
+    color: #60f6ff;
+}
+
+#footer img{
+    width: 200px;
+    height: 200px;
+    border-radius: 200px;
+}
+
+#name{
+    padding-left: 15%;
+    color: #E8C16B;
+}
+
+#footer_head{
+    display: inline;
+}
+
+#footer{
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+#footerDetails th{
+    color: #60f6ff;
+}
+#footerDetails td{
+    color: #f8fefe;
+}
+
+#footerContact{
+    margin-top: 5%;
+    background-color: #E8C16B;
+    color: #60f6ff;
+}
+
+#footerContact a{
+    text-decoration: none;
+    color: #f8fefe;
+    font-size: large;
+    
+}
+
+#footerContact a:hover{
+    color: #60f6ff;
+}
+
+/* mobile responsive ness */
+
+@media(max-width: 700px){
+    .hide{
+        display: none;
+    }
+
+    #hero img{
+        display: none;
+        
+    }
+    #hero div{
+        padding: -90px;
+        width: 100%;
+    }
+    .fontSize{
+        font-size: 50px;
+        width: 100%;
+        
+    }
+
+    #service{
+        padding-top: 5px;
+    }
+
+    #service table{
+        width: 100%;
+    }
+
+    #service table td{
+        padding: 0px;
+        height: 50px;
+        width: 50px;
+    }
+
+    #CallSignBtn{
+        margin: auto;
+        margin-left: 2px;
+    }
+    .card-group{
+        display: inline-block;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .card{
+        width: 285px;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        margin-left: 10%;
+        margin-right: auto;
+    }
+
+    .card img{
+        width: 285px;
+        height: 285px;
+        object-fit: cover;
+        border-radius: 200px;
+    }
+
+    .card-group2{
+        display: inline-block;
+        width: auto;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+}
+
+@media screen and (min-width: 700px) and (max-width: 1024px){
+    .hideButton{
+        display: none;
+    }
+    
+   #hero div{
+        padding-top: 200px;
+        margin-left: auto;
+        margin-right: auto;
+        width: 50%;
+        text-align: center;
+        font-size: 75px;
+    }
+
+    .fontSize{
+        font-size: 75px;
+    }
+
+    #service table{
+        width: 100%;
+    }
+
+    #service table th{
+        font-size: 25px;
+    }
+
+    #service table td{
+        padding: 0px;
+        height: 50px;
+        font-size: 20px;
+    }
+    #CallSign{
+        font-size: 20px;
+    }
+
+    #CallSignBtn{
+        margin: auto;
+        margin-left: 5px;
+    }
+
+    .card img{
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        border-radius: 200px;
+        
+    }
+    .card-group{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .card{
+        margin-left: 5%;
+        margin-right: auto;
+        margin-bottom: 20px;
+        width: 250px;
+       text-align: center;
+    }
+
+    .card-group2{
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+    }
+
+    #footer{
+        display: block;
+        padding-left: 10%;
+        margin-top: 50px;
+        margin-left: 25%;
+    }
+
+    #footer_head{
+        margin-left: 40px;
+    }
+
+    footer{
+        font-size: 30px;
+        
+    }
+
+    #footerDetails{
+        margin-left: 5px;
+        
+    }
+     #name{
+        font-size: 35px;
+     }
+    
+
+}
+
+@media screen and (min-width: 1024px) {
+
+    .hideButton{
+        display: none;
+    }
+
+    #hero div{
+        padding: -90px;
+        width: 50%;
+    }
+    
+#hero div p{
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 75px;
+}
+
+.fontSize{
+    font-size: 75px;
+}
+
+#service table{
+    width: 100%;
+}
+
+#service table th{
+    padding: 5px;
+    height: 50px;
+    font-size: 40px;
+}
+#service table td{
+    padding: 0px;
+    height: 50px;
+    font-size: 35px;
+}
+
+#CallSign{
+    font-size: 30px;
+}
+
+#CallSignBtn{
+    margin: auto;
+    margin-left: 10px;
+}
+
+.card-group{
+
+    margin-left: auto;
+}
+
+.card-group2{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+}
+.card{
+    margin-left: 20px;
+    margin-right: auto;
+    margin-bottom: 10px;
+    align-items: center;
+    justify-content: right;
+}
+
+.card img{
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    margin-left: 10%;
+    margin-right: auto;
+    border-radius: 300px;
+
+
+} 
+
+#cardWrap{
+    padding-left: 11%;
+}
+
+#footer{
+    margin-left: 0;
+    padding-left: 10%;
+    margin-top: 10%;
+}
+
+#name{
+    font-size: 50px;
+}
+
+#footerDetails{
+    font-size: 40px;
+    margin-top: 5%;
+}
+
+#CopyId{
+    font-size: 35px;
+}
+
+}
+
+
+
+
+

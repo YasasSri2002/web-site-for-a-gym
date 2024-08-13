@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Boostrap CDN-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Boostrap Icon CDN-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+    <!--link to style sheet-->
+    <link rel="stylesheet" href="styles2.css">
+    <title>Fat Cat Gym</title>
+</head>
+<body>
+<header>
+        <nav class="navmenue">
+            <div><img src="img/logo.jpg" alt="fat cat"></div>
+            <ul class="sidebar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">ContactUs</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li onclick="hideSide()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8C16B"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+           </ul>
+        <ul class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li ><a href="service.html">Services</a></li>
+            <li ><a href="contact.html">Contact Us</a></li>
+            <li ><a href="about.html">About Us</a></li>
+        </ul>
+        <button id="hideButton" onclick = showSide() style="background-color: #E8C16B;"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#252526"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></button>
+        </nav>
+</header>
+<section id="aboutUs" class="m-3">
+    <div class="container">
+        <div class="row mt-2 mb-2">
+            <h1 class="text-center">Wellcome!</h1>
+            <div class="col">
+                <p class="lead text-light">At Fat Cat Gym, we believe that fitness is not just about working out; it's about building a community, fostering personal growth, and achieving a balanced lifestyle. Our mission is to help you become the best version of yourself by providing a supportive environment, state-of-the-art facilities, and personalized fitness programs.</p>
+            </div>
+        </div>
+
+        <div class="row mt-2 mb-2">
+            <h1 class="text-center">Our Story</h1>
+            <div class="col">
+                <p class="lead text-light">Founded in 20XX, Fat Cat Gym started with a simple goal: to create a fitness space where everyone feels welcome and motivated. Our founders, passionate fitness enthusiasts themselves, wanted to combine their love for fitness with their desire to help others lead healthier lives. Since then, we have grown into a thriving community of members who inspire and support each other every day.</p>
+            </div>
+        </div>
+
+        <div class="row mb-2 mt-2">
+            <h1 class="text-center">Our Facilities</h1>
+            <div class="col text-light">
+                <p class="lead">
+                    Our gym is equipped with the latest fitness technology and offers a variety of amenities to ensure you have everything you need for a great workout
+                </p>
+            </div>
+            <div id="facilitiesList">
+            <ul class="list-group">
+                <li class="list-group-item d-flex justify-content-between align-items-start text-bg-dark col-md-6">
+                  <div class="ms-2 me-auto ">
+                    <div class="fw-bold text-center electricBlue">Modern Workout Equipment</div>
+                    From cardio machines to free weights and resistance training equipment.
+                  </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start text-bg-dark col-md-6">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold text-center electricBlue">Spacious Studios</div>
+                    For group classes such as yoga, Pilates, Zumba, and more.
+                  </div>
+                </li>
+                <li class="list-group-item d-flex justify-content-between align-items-start text-bg-dark col-md-6">
+                  <div class="ms-2 me-auto">
+                    <div class="fw-bold text-center electricBlue">Personal Training Zones</div>
+                    Dedicated areas for one-on-one training sessions.
+                  </div>
+                  <li class="list-group-item d-flex justify-content-between align-items-start text-bg-dark col-md-6">
+                    <div class="ms-2 me-auto ">
+                      <div class="fw-bold text-center electricBlue">Relaxation Areas</div>
+                      Including a sauna and steam room for post-workout relaxation.
+                    </div>
+                    <li class="list-group-item d-flex justify-content-between align-items-start text-bg-dark col-md-6 ">
+                        <div class="ms-2 me-auto">
+                          <div class="fw-bold text-center electricBlue">Nutrition Bar</div>
+                          Offering healthy snacks and smoothies to refuel your body
+                        </div>
+                </li>
+              </ul>
+            </div>
+        </div>
+
+        <div class="row mt-2 mb-2">
+            <h1 class="text-center">Our Team</h1>
+            <div class="col">
+                <p class="lead text-light">
+                    Our team of certified trainers and nutritionists is here to guide and support you on your fitness journey. Whether you are a beginner or an advanced athlete, our staff is dedicated to helping you achieve your goals.
+                </p>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <a href="index.html" id="staffReadmoreBtn" class="btn me-md-2" type="button">
+                    <i class="bi bi-chevron-right">Read more</i>
+                </a>
+              </div>
+        </div>
+        
+        <div class="row mt-5 mb-5">
+            <div class="col">
+                <p class="lead golden text-center">
+                    Join us at Fat Cat Gym and become part of a community that values health, fitness, and well-being. Let's work together to achieve your fitness goals and lead a healthier, happier life!
+                </p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+
+<footer class="m-5">
+    
+        <div id="footer">
+           <div class="container">
+            <div class="row">
+                <div class="col" id="footer_head">
+                    <img  src="img/logo.jpg" alt="logo of the gym">
+                    <p id="name">Fat Cat Gym</p>
+                </div>
+                <div class="col" id="footerDetails">
+                    <table>
+                        <tr>
+                            <th>Address</th>
+                        </tr>
+                        <tr>
+                            <td>204, Kandy, Sri Lanka</td>
+                        </tr>
+                        <tr>
+                            <td>E-mail: fatcatgym@email.com</td>
+                        </tr>
+                    </table>
+                   
+                </div>
+            </div>
+           </div>
+        </div>
+        
+       <center><p id="CopyId"style="background-color: #E8C16B;">©2024. Fat Cat Gym Sri Lanka</p></center> 
+</footer>
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">  
+</script>
+<script src="app.js"></script>
+</body>
+</html>

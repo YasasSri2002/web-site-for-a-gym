@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--style sheet link-->
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <!--boostrap icon link-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" integrity="sha384-4LISF5TTJX/fLmGSxO53rV4miRxdg84mZsxmO8Rx5jGtp/LbrixFETvWa5a6sESd" crossorigin="anonymous">
+
+    <!--web site title-->
+    <title>Fat Cat gym</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div><img src="img/logo.jpg" alt="fat cat"></div>
+            <ul class="sidebar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="service.html">Services</a></li>
+                <li><a href="contact.html">ContactUs</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li onclick="hideSide()"><a href=""><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#E8C16B"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
+           </ul>
+        <ul class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li ><a href="service.html">Services</a></li>
+            <li ><a href="contact.html">Contact Us</a></li>
+            <li ><a href="about.html">About Us</a></li>
+        </ul>
+        <button class="hideButton" onclick = showSide() style="background-color: #E8C16B;"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26px" viewBox="0 -960 960 960" width="26px" fill="#252526"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></button>
+        </nav>
+    </header>
+    <section id="hero">
+        <div>
+            <p id="heroParagraph" class="fontSize">Build The <span style="color: #E8C16B;">Body</span> <br>Free The <span style="color: #E8C16B;">Body</span></p>
+        </div>
+    </div>
+        <img id="img1" src="img/free.jpg" alt="">
+    </section>
+
+    <!--service section-->
+    <section id="service" style="padding: 10px;">
+        <hr>
+        <center><h1 class="fontSize" style="color: #E8C16B; font-style: italic;">Our service</h1></center>
+         <div>
+            <table>
+                <tr>
+                    <th style="color: #f8fefe;">Course Name</th>
+                    <th style="color: #E8C16B;">Brief Details</th>
+                </tr>
+                <tr>
+                    <td style="color: #E8C16B;">Skinny Cat</td> 
+                    <td>Weight Loss Program</td>
+                </tr>
+                <tr>
+                    <td style="color: #E8C16B;">Fat Cat</td>
+                    <td>Bulk Up Program</td>
+                </tr>
+                <tr>
+                    <td style="color: #E8C16B;">Agile Cat</td>
+                    <td>Flexibility and Mobility Program</td>
+                </tr>
+                <tr>
+                    <td style="color: #E8C16B;">Strong Cat</td>
+                    <td>Strength and Conditioning Program</td>
+                </tr>
+                <tr>
+                    <td style="color: #E8C16B;">Fit Cat</td>
+                    <td>General Fitness Program</td>
+                </tr>
+                <tr>
+                    <td style="color: #E8C16B;"> Zen Cat</td>
+                    <td>Mind-Body Wellness Program</td>
+                </tr>
+                <tr>
+                    <td style="color: #E8C16B;">Power Cat</td>
+                    <td>High-Performance Training Program</td>
+                </tr>
+            </table> 
+        </div>
+        <div id="heroCallSign"> 
+            <P id="CallSign">Don't waste time <span><a href="contact.html"> look for more detail and sign up</span></a> for a program.</P>
+            <button id="CallSignBtn"><a href="contact.html"><svg xmlns="http://www.w3.org/2000/svg" height="25px" viewBox="0 -960 960 960" width="25px" fill="#60f6ff"><path d="M530-481 332-679l43-43 241 241-241 241-43-43 198-198Z"/></svg></a></button>
+        </div>
+    </section>
+   <!--Our staff-->
+   <section id ="staff"style="margin-top: 100px; ">
+   
+        <center><h1 class="fontSize" style="color: #E8C16B; font-style: italic;">Our staff</h1></center>
+<div id="cardWrap">
+    <div class="card-group">
+        <div class="card" style=" border: solid #f8fefe;">
+                 <img src="img/kayden2.jpg" alt="">
+                <div id="cardAbout">
+                    <h2 id="staffName">Kayden break - Head Personal Trainer</h2>
+                    <p style="color: #f8fefe;">kayden is a certified personal trainer with over 10 years of experience in the fitness industry. he specializes in weight loss, strength training, and high-intensity interval training (HIIT). kayden is known for her motivational coaching style and personalized workout plans that help clients achieve their fitness goals efficiently</p>
+                </div>
+    
+                <div id="cardIcons">
+                    <a href="whatsapp.com">
+                        <i class="bi bi-whatsapp"style="background-color: #252525; color: #60f6ff;"></i>
+                    </a>
+                    <a href="facebook.com">
+                        <i class="bi bi-facebook" style="background-color: #252525; color: #60f6ff;"></i>
+                    </a>
+                    <a href="instagram.com">
+                        <i class="bi bi-instagram" style="background-color: #252525; color: #60f6ff;"></i>
+                    </a>
+                </div>
+    
+            </div>
+            <div class="card" style=" border: solid #f8fefe;">
+                <img src="https://randomuser.me/api/portraits/women/11.jpg" alt="">
+                <div id="cardAbout">
+                    <h2 id="staffName">Jiyoung Lee - Yoga and Pilates Instructor</h2>
+                    <p style="color: #f8fefe;">Jiyoug is a seasoned yoga and Pilates instructor with a passion for holistic wellness. With over 7 years of teaching experience, she helps clients improve their flexibility, balance, and mental well-being through mindful practices.</p>
+                </div>
+    
+                <div id="cardIcons">
+                    <a href="whatsapp.com">
+                        <i class="bi bi-whatsapp"style="background-color: #252525; color: #60f6ff;"></i>
+                    </a>
+                    <a href="facebook.com">
+                        <i class="bi bi-facebook" style="background-color: #252525; color: #60f6ff;"></i>
+                    </a>
+                    <a href="instagram.com">
+                        <i class="bi bi-instagram" style="background-color: #252525; color: #60f6ff;"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="card-group2">
+            <div class="card" style="border: solid #f8fefe;">
+                <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="">
+                <div id="cardAbout">
+                    <h2 id="staffName">David Martinez - Strength and Conditioning Coach</h2>
+                    <p style="color: #f8fefe;">David is a certified strength and conditioning coach with a background in sports performance. He has worked with athletes and fitness enthusiasts to enhance their strength, power, and endurance. David is dedicated to helping clients reach their peak physical performance.</p>
+                </div>
+    
+                <div id="cardIcons">
+                    <a href="whatsapp.com">
+                        <i class="bi bi-whatsapp"style="background-color: #252525; color: #60f6ff;"></i>
+                    </a>
+                    <a href="facebook.com">
+                        <i class="bi bi-facebook" style="background-color: #252525; color: #60f6ff;"></i>
+                    </a>
+                    <a href="instagram.com">
+                        <i class="bi bi-instagram" style="background-color: #252525; color: #60f6ff;"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="card" style="border: solid #f8fefe;">
+                <img src="https://randomuser.me/api/portraits/men/11.jpg" alt="">
+                <div id="cardAbout">
+                    <h2 id="staffName">Michael Thompson - Nutritionist</h2>
+                    <p style="color: #f8fefe;">Michael is a licensed nutritionist who has been helping clients with their dietary needs for over 8 years. He focuses on creating tailored meal plans that complement various fitness programs, ensuring clients receive the nutrition they need to succeed in their fitness journey.</p>
+                </div>
+    
+                <div id="cardIcons">
+                    <a href="whatsapp.com">
+                        <i class="bi bi-whatsapp"style="background-color: #252525; color: #60f6ff;"></i>
+                    </a>
+                    <a href="facebook.com">
+                        <i class="bi bi-facebook" style="background-color: #252525; color: #60f6ff;"></i>
+                    </a>
+                    <a href="instagram.com">
+                        <i class="bi bi-instagram" style="background-color: #252525; color: #60f6ff;"></i>
+                    </a>
+                </div>
+            </div>
+        
+</div>
+   </section>   
+
+   <footer>
+    
+    <div id="footer">
+        <div id="footer_head">
+            <img src="img/logo.jpg" alt="logo of the gym">
+            <p id="name">Fat Cat Gym</p>
+        </div>
+        <div id="footerDetails">
+            <table>
+                <tr>
+                    <th>Address</th>
+                </tr>
+                <tr>
+                    <td>204, Kandy, Sri Lanka</td>
+                </tr>
+                <tr>
+                    <td>E-mail: fatcatgym@email.com</td>
+                </tr>
+            </table>
+            <center><button id="footerContact"><a href="contact.html">Contact us</a></button></center>
+        </div>
+        
+    </div>
+    
+   <center><p id="CopyId"style="background-color: #E8C16B;">©2024. Fat Cat Gym Sri Lanka</p></center> 
+</footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
