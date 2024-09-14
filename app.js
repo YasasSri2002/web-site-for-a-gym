@@ -1,6 +1,8 @@
 function showSide(){
     const sidebar = document.querySelector('.sidebar');
     sidebar.style.display = "flex";
+    const button = document.getElementById('listButton');
+    button.style.display= "none";
 }
 function hideSide(){
     const sidebar = document.querySelector('.sidebar');
